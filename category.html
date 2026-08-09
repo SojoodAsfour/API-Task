@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Category Products</title>
+    <link rel="stylesheet" href="./assets/css/output.css">
 </head>
-<body>
-    
+
+<body class="bg-primary-1 text-dark">
+
+    <header class="bg-white border-b border-gray-200">
+        <div class="container mx-auto py-6 px-4 sm:px-6 lg:px-8 items-center justify-between flex">
+            <a href="./index.html" class="flex items-center gap-2">
+
+                <div
+                    class="py-2 px-4 bg-primary-3 text-white rounded-xl flex items-center justify-center font-bold text-xl">
+                    S
+                </div>
+
+                <span class="text-xl md:text-2xl font-bold">
+                    Shop<span class="text-primary-3">ly</span>
+                </span>
+
+            </a>
+
+            <ul class="hidden md:flex items-center gap-8">
+
+                <li>
+                    <a href="./index.html" class="headerLink">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+
+            <button class="md:hidden p-2 rounded-xl bg-primary-1 text-primary-4 flex items-center justify-center">
+                <img src="./assets/img/list.svg" alt="list" />
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="py-10 md:py-16">
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="text-center mb-10">
+
+                    <span class="text-primary-3 font-bold text-xl md:text-2xl">
+                        Products
+                    </span>
+
+                    <h1 class="category-title text-3xl md:text-4xl font-bold text-dark mt-2 capitalize">
+                    </h1>
+
+                    <p class="text-muted py-4">
+                        Explore products from this category.
+                    </p>
+
+                </div>
+
+
+                <div class="category-products grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script type="module" src="./assets/js/category.js"></script>
+
 </body>
+
 </html>
