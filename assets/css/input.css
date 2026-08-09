@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary-1: #F5F3FF;
+    --color-primary-2: #EDE9FE;
+    --color-primary-3: #6D5DFC;
+    --color-primary-4: #5B4DE0;
+    --color-primary-5: #493DB8;
+    --color-accent: #FF8A65;
+    --color-dark: #172033;
+    --color-muted: #6B7280;
+    --color-cream: #FFFAF5;
+}
+
+@layer components{
+    .headerLink{
+        @apply text-dark hover:text-primary-3 transition-all duration-500;
+    }
+}

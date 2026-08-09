@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./assets/css/output.css">
+</head>
+
+<body class="bg-white text-dark">
+
+    <header class="bg-white border-b border-gray-200">
+        <div class="container mx-auto py-6 px-4 sm:px-6 lg:px-8 items-center justify-between flex">
+            <a href="index.html" class="flex items-center gap-2">
+
+                <div
+                    class="py-2 px-4 bg-primary-3 text-white rounded-xl flex items-center justify-center font-bold text-xl">
+                    S
+                </div>
+
+                <span class="text-xl md:text-2xl font-bold">
+                    Shop<span class="text-primary-3">ly</span>
+                </span>
+
+            </a>
+
+            <ul class="hidden md:flex items-center gap-8">
+
+                <li>
+                    <a href="#home" class="headerLink">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#categories" class="headerLink">
+                        Categories
+                    </a>
+                </li>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <div class="flex items-center gap-3">
+
+                <a href="#categories"
+                    class="hidden sm:block bg-primary-3 text-white px-5 py-2.5 rounded-full hover:bg-primary-4 transition-all duration-500">
+                    Shop Now
+                </a>
+
+                <button class="md:hidden p-2 rounded-xl bg-primary-1 text-primary-4 flex items-center justify-center">
+                    <img src="./assets/img/list.svg" alt="list" />
+                </button>
+
+            </div>
+
+
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero relative overflow-hidden bg-primary-2 min-h-screen">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24 relative">
+                <div class="container mx-auto text-center">
+
+                    <div
+                        class="inline-flex items-center gap-2 bg-white text-primary-4 px-4 py-4 rounded-full text-sm shadow-sm mb-6">
+                        <span class="p-1.5 bg-accent rounded-full"></span>
+                        Discover your favorites
+                    </div>
+
+                    <h1 class="text-[30px] md:text-[40px] lg:text-[50px] font-bold text-dark"> Everything you need,
+                        <span class="text-primary-3">
+                            all in one place.
+                        </span>
+
+                    </h1>
+
+                    <p class="text-muted text-[16px] md:text-[20px] lg:text-[24px] leading-8 mt-8">
+                        Explore products from different categories, discover new favorites, and find the perfect
+                        products for you.
+                    </p>
+
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-4 mt-6  md:mt-8">
+
+                        <a href="#categories"
+                            class="w-full sm:w-auto bg-primary-3 text-white text-[14px] md:text-[16px] font-bold px-7 py-3 rounded-full hover:bg-primary-4 transition-all duration-500">
+                            Shop Products
+
+                        </a>
+
+                        <a href="#categories"
+                            class="w-full sm:w-auto bg-white text-dark text-[14px] md:text-[16px] font-bold px-7 py-3 rounded-full border border-primary-2 hover:border-primary-3 hover:text-primary-3 transition-all duration-500">
+                            Browse Categories
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section id="categories" class="py-10 md:py-15">
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="text-center">
+
+                    <span class="text-primary-3 font-bold text-xl md:text-2xl">
+                        Categories
+                    </span>
+
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mt-2">
+                        Browse By Category
+                    </h2>
+
+                    <p class="text-muted py-6">
+                        Choose a category and explore its products.
+                    </p>
+
+                </div>
+
+                <div class="container categories flex flex-wrap gap-2 justify-center md:gap-4">
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>
