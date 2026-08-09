@@ -1,4 +1,5 @@
 import axios from "axios";
+import ratingIcon from "../img/rating.svg";
 
 const params = new URLSearchParams(location.search);
 const category = params.get("category");
@@ -28,7 +29,7 @@ const displayCategoryProducts = async () => {
                             $${product.price}
                         </span>
                         <div class="flex items-center gap-1">
-                            <img src="./assets/img/rating.svg" alt="Star Rating">
+                            <img src="${ratingIcon}" alt="Star Rating">
                             <span class="text-dark">
                                 ${product.rating}
                             </span>

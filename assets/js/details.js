@@ -1,5 +1,7 @@
 import axios from "axios";
 import Swiper from "swiper";
+import ratingIcon from "../img/rating.svg";
+
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -33,7 +35,7 @@ const displayProductDetails = async () => {
                 <div class="flex items-center justify-between gap-3">
                     <h3 class="font-bold text-dark">${review.reviewerName}</h3>
                     <div class="flex items-center gap-2">
-                        <img src="./assets/img/rating.svg" alt="Star Rating">
+                        <img src="${ratingIcon}" alt="Star Rating">
                         <span class="font-bold">${review.rating}</span>
                     </div>
                 </div>
@@ -70,7 +72,7 @@ const displayProductDetails = async () => {
                         </span>
 
                         <div class="flex items-center gap-2">
-                            <img src="./assets/img/rating.svg" alt="Star Rating">
+                            <img src="${ratingIcon}" alt="Star Rating">
                             <span class="font-bold text-lg text-dark">
                                 ${product.rating}
                             </span>
