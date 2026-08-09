@@ -14,7 +14,7 @@ const getCategoryProducts = async () => {
 const displayCategoryProducts = async () => {
     const products = await getCategoryProducts();
     const result = products.map(product => {
-        return `<div class="product bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1
+        return ` <a href="details.html?id=${product.id}" class="product bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1
             transition-all duration-500">
                 <div class="bg-primary-2 p-5">
                     <img src="${product.thumbnail}" alt="${product.title}">
@@ -35,7 +35,7 @@ const displayCategoryProducts = async () => {
                         </div>
                     </div>
                 </div>
-            </div>`;
+            </a>`;
     }).join("");
 
     productsContainer.innerHTML = result;
